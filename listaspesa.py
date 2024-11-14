@@ -8,7 +8,7 @@ def riempi_lista(lista):
 
 def Stampa_lista(lista):
     print("lista della spesa")
-    for i in range(len(lista)):
+    for i in range(len(lista)): #questo for scorre la lista fino alla sua lunghezza e stampa ogni elemento con il suo indice
         print(f"{i + 1}. {lista[i]}")
 
 
