@@ -4,9 +4,6 @@ def riempi_lista(lista):
     prodotto = input("inserire prodotto:")
     lista.append(prodotto)
 
-riempi_lista(lista)
-riempi_lista(lista)
-riempi_lista(lista)
 
 
 def Stampa_lista(lista):
@@ -19,7 +16,15 @@ def rimuovi_lista(lista):
     prodotto = input ("inserisci il prodotto da rimuovere dalla lista:")
     lista.pop(lista.index(prodotto))
 
-rimuovi_lista(lista)
-Stampa_lista(lista)
 
 
+while True:
+    scelta = input("quale funzione vuoi eseguire? (aggiungi, rimuovi, stampa, esci):\n 1. Aggiungi\n 2. Rimuovi\n 3. Stampa\n 4. Esci")
+    if scelta == "1":
+        Aggiungi_lista(lista)
+    if scelta == "2":
+        Rimuovi_prodotto(lista)
+    if scelta == "3":
+        Stampa_lista(lista)
+    if scelta == "4":
+        break
