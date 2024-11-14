@@ -21,9 +21,9 @@ def rimuovi_lista(lista):
 while True:
     scelta = input("quale funzione vuoi eseguire? (aggiungi, rimuovi, stampa, esci):\n 1. Aggiungi\n 2. Rimuovi\n 3. Stampa\n 4. Esci")
     if scelta == "1":
-        Aggiungi_lista(lista)
+        riempi_lista(lista)
     if scelta == "2":
-        Rimuovi_prodotto(lista)
+        rimuovi_lista(lista)
     if scelta == "3":
         Stampa_lista(lista)
     if scelta == "4":
